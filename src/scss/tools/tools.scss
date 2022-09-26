@@ -1,0 +1,52 @@
+//Normalize
+//Fonts:
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Inter&display=swap');
+$primiry-font: 'Inter', sans-serif;
+$secondary-font: 'Cardo', serif;
+$font-size: 19;
+
+// Font-icons:
+@import 'fonts.scss';
+
+//Colors:
+$main-color: #FFCA42;
+$second-color: #1B3764;
+$third-color: #FFFFFF;
+$fourth-color: #B4C7E7;
+
+//Width:
+$maxWidth: 1440px;
+$maxWidthContainer: 1330px;
+$frame: 15px;
+
+//Mixins:
+@mixin colorElement {
+  content: '';
+  display: inline-block;
+  background-color: $main-color;
+};
+
+@mixin ball {
+  width: 16px;
+  height: 16px;
+  border-radius: 16px
+};
+
+@mixin title-line {
+  width: 50px;
+  height: 3px;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  bottom: 50%;
+}
+
+@mixin line-center {
+  left: 50%;
+  margin-left: -25px;
+}
+
+@mixin line-start {
+  left: 0;
+}
+

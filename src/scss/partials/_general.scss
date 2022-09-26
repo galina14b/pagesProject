@@ -1,0 +1,8 @@
+@import '../tools/tools.scss';
+
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: $primiry-font;
+}
